@@ -1,0 +1,88 @@
+.marquee-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    height: 20px;
+  }
+  
+  .marquee-container {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    height: 40px;
+  }
+  
+  .marquee-left {
+    background-color: #f56d0c;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    white-space: nowrap;
+    width: 30%;
+    position: relative;
+  }
+  
+  .marquee-left::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -10px; /* Adjust to control the slant */
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent; /* Adjust height to match the container */
+    border-left: 10px solid #f56d0c; /* Adjust width and color to match the container */
+    border-bottom: 20px solid transparent; /* Adjust height to match the container */
+    z-index: 1; /* Ensure the slant is below the text */
+  }
+  .marquee-left{
+    font-weight: 900;
+  }
+  
+  .marquee-right {
+    background-color: #acd3fb;
+    color: black;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    flex-grow: 1;
+    position: relative;
+    padding-left: 30px; /* Add padding to start text a little bit inside */
+  }
+  
+  .marquee-right::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10px; /* Adjust to control the slant */
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent; /* Adjust height to match the container */
+    border-right: 10px solid #acd3fb; /* Adjust width and color to match the container */
+    border-bottom: 20px solid transparent; /* Adjust height to match the container */
+    z-index: 1; /* Ensure the slant is below the text */
+  }
+  
+  .marquee {
+    display: flex;
+    animation: marquee 20s linear infinite;
+    white-space: nowrap;
+    padding-left:15%;
+  }
+  
+  .marquee p {
+    margin: 0 20px;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
