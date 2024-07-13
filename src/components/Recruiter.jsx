@@ -105,8 +105,8 @@ const RecruiterCarousel = () => {
   }
 
   return (
-    <div style={{ maxWidth: '900px', margin: '0 auto', textAlign: 'center', padding: '20px', marginBottom:"30px" }}>
-      <h2 style={{ marginBottom: '40px', fontSize: '45px', color:"#002060"}}>Prime Recruiters</h2>
+    <div style={{ maxWidth: '900px', margin: '0 auto', textAlign: 'center', padding: '20px', marginBottom:"30px",fontFamily:"'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" }}>
+      <h2 style={{ marginBottom: '40px', fontSize: '35px', color:"#002060"}}>Prime Recruiters</h2>
       <Carousel
         showArrows={true}
         showThumbs={false}
