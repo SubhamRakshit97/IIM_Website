@@ -173,6 +173,13 @@ main {
 .highlight-item {
     margin: 20px 0;
 }
+.totaldashboard{
+    display: flex;
+    padding: 35px 35px;
+    gap: 82px;
+    background-color: burlywood;
+    font-weight: 900;
+}
 
 footer {
     background-color: #000000;

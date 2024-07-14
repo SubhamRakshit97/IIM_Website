@@ -6,6 +6,7 @@ import VideoComponent from './components/VideoComponent';
 import About from './components/Events';
 import Marquee from './components/Marquee';
 import RecruiterCarousel from './components/Recruiter';
+import Dashboard from './components/Dashboard';
 
 const App = () => {
     return (
@@ -14,6 +15,7 @@ const App = () => {
            <VideoComponent/>
            <Marquee/>
            <About/>
+           <Dashboard/>
            <RecruiterCarousel/>
           <Footer/>
         </div>
