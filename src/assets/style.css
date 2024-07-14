@@ -177,7 +177,7 @@ main {
     display: flex;
     padding: 35px 35px;
     gap: 82px;
-    background-color: burlywood;
+    background-color: rgba(243, 148, 25, 0.3);
     font-weight: 900;
 }
 
